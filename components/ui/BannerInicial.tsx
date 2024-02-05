@@ -111,7 +111,7 @@ export default function BannerInicial({ title, subtitle, img }: Props) {
                 height={632}
                 class={"md:max-w-[50%] max-w-full w-full"}
                 sizes="(max-width: 640px) 50vw, 20vw"
-                loading={"lazy"}
+                loading={"eager"}
                 decoding="async"
               />
             )}

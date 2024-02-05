@@ -15,7 +15,7 @@ import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
 import { Logo } from "$store/components/header/Header.tsx";
 
-function Navbar({ items, searchbar, logo,logoPosition = "left" }: {
+function Navbar({ items, searchbar, logo, logoPosition = "left" }: {
   items: SiteNavigationElement[];
   searchbar?: SearchbarProps;
   logo?: Logo;
@@ -90,14 +90,17 @@ function Navbar({ items, searchbar, logo,logoPosition = "left" }: {
           )}
         </div>
         <div class="flex-none flex items-center justify-end gap-6 col-span-1">
-          {/* {!buttons?.hideSearchButton && (
+          {
+            /* {!buttons?.hideSearchButton && (
             <div class="flex items-center text-xs font-thin gap-1">
               <SearchButton />SEARCH
             </div>
-          )} */}
+          )} */
+          }
 
           <Searchbar searchbar={searchbar} />
-          {/* {!buttons?.hideAccountButton && (
+          {
+            /* {!buttons?.hideAccountButton && (
             <a
               class="flex items-center text-xs font-thin"
               href="/account"
@@ -130,7 +133,8 @@ function Navbar({ items, searchbar, logo,logoPosition = "left" }: {
               {platform === "shopify" && <CartButtonShopify />}
               {platform === "nuvemshop" && <CartButtonNuvemshop />}
             </div>
-          )} */}
+          )} */
+          }
         </div>
       </div>
     </>
