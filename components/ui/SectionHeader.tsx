@@ -33,8 +33,8 @@ function Header(props: Props) {
                   }
                   ${fontSizeClasses[props.fontSize || "Normal"]}
                 `}
+                  dangerouslySetInnerHTML={{ __html: props.title }}
                 >
-                  {props.title}
                 </h1>
               )}
             {props.description &&

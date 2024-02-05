@@ -5,8 +5,16 @@ export default {
   daisyui: { themes: [], logs: false },
   content: ["./**/*.tsx"],
   theme: {
-    container: { center: true },
+    container: {
+      center: true,
+      screens: {
+        xl: "1140px",
+      },
+    },
     extend: {
+      fontFamily: {
+        inter: ['"Inter"'],
+      },
       animation: {
         sliding: "sliding 30s linear infinite",
       },
